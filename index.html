@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,31 @@
         <div id="first-screen">
             <div id="area" class="container-fluid p-4">
                 <header class="row" style="margin-bottom: 50px;">
-                    <div class="col-6">
-                        <img src="./img/logo.webp">
-                    </div>
-                    <div class="col-6">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"><img src="./img/logo.webp"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alterna navegação">
+                            <span ><img src="./img/menu-aberto.png"></span>
+                          </button>
+                      
+                        <div class="collapse navbar-collapse" id="menu">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link first_li light-orange" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Conteúdo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inscrição</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dúvidas</a>
+                            </li>
+                        </ul>
+                        </div>
                         
-                    </div>
+                        
+                    </nav>
                 </header >  <!--Div do cabeçalho-->  
                 <div class="row">
                     <div id="introduction" class="col-12 col-lg-6 white">
@@ -56,15 +75,15 @@
              
                 
                 
-                    <div class="row" style="margin-left: 0px;">
-                        <div class="col-md-6  col-lg-4 cards">
+                    <div id="div_cards" class="row">
+                        <div class="col-md-6 col-lg-4 cards">
                             <div class="logo_circle">
                                 <img src="./img/nodejs-logo.png" alt="logo do node Js">
                             </div>
                             <h3>Node.Js</h3>
                             <p class="light-orange desc">Uma plataforma que permite criar aplicações utilizando arquiteturas modernas e escaláveis.</p>
                         </div>
-                        <div class="col-md-6  col-lg-4 cards">
+                        <div class="col-md-6 col-lg-4 cards">
                             <div class="logo_circle">
                                 <img src="./img/mongodb-logo.png" alt="logo do Mongo DB">
                             </div>
@@ -72,28 +91,28 @@
                             <h3>MongoDB</h3>
                             <p class="light-orange desc">Simplesmente o banco de dados mais prático para você aprender a construir aplicações reais com Node.js.</p>
                         </div>
-                        <div class="col-md-6  col-lg-4 cards">
+                        <div class="col-md-6 col-lg-4 cards">
                             <div class="logo_circle">
                                 <img src="./img/expressjs-logo.png" alt="logo do Express Js">
                             </div>
                             <h3>ExpressJS</h3>
                             <p class="light-orange desc">O framework web para Node.js mais utilizado no mundo, por empresas de todos os tamanhos.</p>
                         </div>
-                        <div class="col-md-6  col-lg-4 cards">
+                        <div class="col-md-6 col-lg-4 cards">
                             <div class="logo_circle">
                                 <img src="./img/microservices-logo.png" alt="logo do micro services">
                             </div>
                             <h3>Microservices</h3>
                             <p class="light-orange desc">A arquitetura de software #1 atualmente quando o assunto é aplicações distribuídas e escaláveis.</p>
                         </div>
-                        <div class="col-md-6  col-lg-4 cards">
+                        <div class="col-md-6 col-lg-4 cards">
                             <div class="logo_circle">
                                 <img src="./img/aws-logo.png" alt="logo do Amaazon AWS">
                             </div>
                             <h3>Amazon AWS</h3>
                             <p class="light-orange desc">Não basta desenvolver, você tem de saber como subir a sua aplicação em produção. Que tal na Amazon AWS?</p>
                         </div>
-                        <div class="col-md-6  col-lg-4 cards">
+                        <div class="col-md-6 col-lg-4  cards">
                             <div class="logo_circle">
                                 <div class="emoji">🙌🏻</div>
                             </div>
@@ -109,7 +128,8 @@
             
            
     
-   
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
 </body>
 </html>
